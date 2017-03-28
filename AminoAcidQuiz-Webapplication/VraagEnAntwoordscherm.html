@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Web pagina is ingedeeld in 3 stukken. Top, mid,bot.
+In de top zit een logo, en de naam van de speler via label.
+In mid zit de dataview, en de vragen.
+top zit de page navigation en 3 knoppen.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Aminozuurquiz - Vraag - en Antwoordscherm</title>
+        <wicket:link> 
+            <link rel="stylesheet" type="text/css" href="style.css"/> 
+        </wicket:link> 
+    </head>
+    <body>
+        <div class="VASBoven">
+            <div class="VASBovenLogo">
+                <img src="AminuzuurLogo.png" ></img>
+            </div>
+            <div class="VASBovenNaamDiv">
+                <span wicket:id="Naam" class="VASBovenNaamSpan"></span>
+            </div>
+        </div>
+        <div class="VASMidden">
+            <div class="VASMiddenLinks"></div>
+            <div class="VASMiddenRechts" wicket:id="dvVragen">
+                <form >
+                    <h1 wicket:id="toonVraag"> </h1>
+                    <div class="VASMiddenRechtsAntwBlok" wicket:id="vraagKeuzes"></div>
+                </form>
+            </div>
+        </div>
+        <div class="VASOnder">
+            <div class="VASOnderLinks"></div>
+            <div class ="VASOnderRechts">
+                <div wicket:id="PaginNav" class="VASOnderRechtsPageNav"></div>
+                <form class="VASOnderRechtsKnoppen" wicket:id="formNav">
+                    <div><input type="submit" wicket:id="btnHerlaad" value="Herladen"></input></div>
+                    <div><input type="submit" wicket:id="btnScore" value="Toon score"></input></div>
+                    <div><input type="submit" wicket:id="btnStop" value="Stoppen"></input></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+De pagina maakt gebruik van de standaard css. de body krijgt de css class
+'sb' mee, dit is de standaard body id in de css. Daarnaast krijgt elk
+element een whitespace ruimte mee onder elk element en een vaste hoogte door
+formhoogte. De wicket id's worden gebruikt voor de formulier elementen.
+
+Voor de textinput wordt required gebruikt om geen lege textboxen terug
+te sturen naar wicket. Readonly wordt gebruikt om het spinnerelement
+nuttig te maken.
+-->
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Aminozuurquiz - Introductiescherm</title>
+        <wicket:link> 
+            <link rel="stylesheet" type="text/css" href="style.css"/> 
+        </wicket:link> 
+    </head>
+    <body>
+        <img src="AminuzuurLogo.png" class="IntoLogoRuimte"></img>
+        <h1 class="IntroH1Welkom">Welkom! </h1>
+        <h2 class="IntroH2Naam">Voer je naam in:</h2>
+        <form wicket:id="formData">
+            <input type="text" wicket:id="tfNaam" class="IntroFormNaam" required="true"></input>
+            <h2 class="IntroH2Vragen">Aantal vragen:</h2>
+            <input type="text" name="vragen" wicket:id="spinVragen" class="IntroFormVragen" readonly="true"></input>
+            <input type="submit" class="IntroFormStartHoogte" value="Start"></input>
+        </form>
+    </body>
+</html>

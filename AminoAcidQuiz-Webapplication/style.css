@@ -1,0 +1,240 @@
+/* Elke body krijgt een vaste border, lettertype, formaat en achtergrond. */
+body {
+    font: 15px Verdana;
+    border-radius: 25px;
+    border: 5px solid rgb(255,0,255);
+    width: 800px;
+    height: 600px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    background: rgba(255, 249, 161, 1);
+    background-image: url('AminoAchtergrond.jpg');
+    background-attachment: fixed;
+    background-position: center top; 
+    background-repeat: repeat;       
+}
+
+/* Maakt elk plaatje 500 bij 100. Er is maar 1 plaatje dus daarom dit als css*/
+img{
+    width: 500px;
+    height: 100px;
+}
+
+/*Hoogte en ruimte bepaling voor tekst invoer naam. */
+.IntroFormNaam{
+    height: 40px;
+    margin-bottom: 20px ;
+}
+
+/* Hoogte voor de startknop en het plaatsen van de knop naar een nieuwe regel */
+.IntroFormStartHoogte{
+    display: block;
+    height: 40px;
+}
+
+/*Hoogte en ruimte bepaling voor tekstbox voor aantal vragen. */
+.IntroFormVragen{
+    height: 40px;
+    margin-bottom: 20px ;
+}
+
+/*Rood, ruimte en hoogte bepaling voor h1 element met tekst welkom.*/
+.IntroH1Welkom{
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px ;
+    height: 40px;
+}
+
+/*Hoogte en ruimte bepaling voor h2 element voor naam. */
+.IntroH2Naam{
+    height: 40px;
+    margin-bottom: 20px ;
+}
+
+/*Hoogte en ruimte bepaling voor h2 element vragen. */
+.IntroH2Vragen{
+    height: 40px;
+    margin-bottom: 20px ;
+}
+
+/* Hiermee wordt er een ruimte van 20 pixels onder het logo gezet.*/
+.IntoLogoRuimte{
+    margin-bottom: 20px ;
+}
+
+/* Teksteigenschap voor de eerste h1 van scorescherm. */
+.ScoreH1Score{
+    color: rgb(0, 255, 0);
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 30px ;
+    height: 40px;
+}
+
+/* Hoogte en ruimte onder H1 met de naam van speler.*/
+.ScoreH2Naam{
+    height: 40px;
+    margin-bottom: 30px ;
+    font-weight: bold;
+}
+
+/* Groote en ruimte onder H2 score. */
+.ScoreH2Score{
+    height: 40px;
+    margin-bottom: 55px ;
+    font-weight: bold;
+}
+
+/* De kleur van de span in de H2 score. In dit geval rood.*/
+.ScoreH2Score span{
+    color: rgb(255, 0, 0)
+}
+
+/* Hoogte, breedte en kleur voor resetknop. */
+.ScoreKnopReset{
+    height: 40px;
+    width: 30%;
+    display: block;
+    color: rgb(0, 0, 255);
+}
+
+/*Hoogte, breedte en kleur van de stopknop.*/
+.ScoreKnopStop{
+    height: 40px;
+    width: 30%;
+    margin-bottom: 5px ;
+    color: rgb(0, 0, 255);
+}
+
+/* Ruimte onder het logo op het scorescherm.*/
+.ScoreLogoRuimte{
+    margin-bottom: 30px ;
+}
+
+/*Container top met eigenschappen.*/
+.VASBoven{
+    width: 800px;
+    height: 100px;
+    overflow:visible;
+}
+
+/* Logo heeft al 500x100 eigenschap bij img. Hiermee wordt element links gezet. */
+.VASBovenLogo{
+    float: left;
+}
+
+/*formaat naam en rechts allignen.*/
+.VASBovenNaamDiv{
+    width: 300px;
+    height: 100px;
+    float: right;
+}
+
+/*Naam van speler is zwart en dikgedrukt om het duidelijk te maken.*/
+.VASBovenNaamSpan{
+    color: rgb(0, 100, 0) ;
+    float: right;
+    font-weight: bold;
+}
+
+/*Formaat middelste blok.*/
+.VASMidden{
+    width: 800px;
+    height: 400px;
+}
+
+/*Blok links met breedte van 20 pixels. */
+.VASMiddenLinks{
+    width: 20px;
+    height: 400px;
+    float: left;
+}
+
+/*eigenschappen van blok rechts*/
+.VASMiddenRechts{
+    width: 780px;
+    height: 400px;
+    float: right;
+}
+
+/* table design voor vragen.*/
+.VASMiddenRechtsAntwBlok{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* cel design voor elke optie.*/
+.VASMiddenRechtsAntwBlok span {
+    display: table-cell;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Formaat onderste gedeelte.*/
+.VASOnder{
+    width: 800px;
+    height: 100px;
+}
+
+/*Ruimte links, 20 pixels met float.*/
+.VASOnderLinks{
+    width: 20px;
+    height: 100px;
+    float: left;
+}
+
+/*Ruimte rechts met float rechts.*/
+.VASOnderRechts{
+    width: 780px;
+    height: 100px;
+    float: right;
+}
+
+/* Tabel design voor de knoppen met een hoogte van 90 pixels.*/
+.VASOnderRechtsKnoppen{
+    height: 80px;
+    display: table;
+    width: 780px;
+    table-layout: fixed;
+}
+
+/* Tabel design voor knoppen.*/
+.VASOnderRechtsKnoppen div{
+    display: table-cell;
+}
+
+/*Hoogte van de naviatie. In dit geval 20 pixels.*/
+.VASOnderRechtsPageNav{
+    height: 20px;
+    width: 780px;
+    text-align: center;
+}
+
+/* Hiermee wordt de body van het welkomstscherm in het midden geplaatst. */
+.WelkomBody{
+    margin-left: auto;
+    margin-right: auto;      
+}
+
+/*Hiermee wordt de tekst vergroot en rood gemaakt voor openingscherm.*/
+.WelkomH1Lower{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 72px;
+}
+
+/*Hiermee wordt de tekst vergroot en rood gemaakt voor openingscherm.*/
+.WelkomH1Upper{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 72px;
+}
+
+/*Tonen en allignen van afbeelding openingscherm.*/
+.WelkomLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
