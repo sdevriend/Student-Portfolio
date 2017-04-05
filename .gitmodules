@@ -1,3 +1,9 @@
 [submodule "Bmol-script"]
 	path = Bmol-script
 	url = https://github.com/JesseKerkvliet/Bmol-script.git
+[submodule "WieHaaltErKoffie"]
+	path = WieHaaltErKoffie
+	url = https://github.com/sdevriend/WieHaaltErKoffie.git
+[submodule "bapgcOpdracht"]
+	path = bapgcOpdracht
+	url = https://github.com/sdevriend/bapgcOpdracht.git
