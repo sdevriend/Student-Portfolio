@@ -1,0 +1,3 @@
+[submodule "Bmol-script"]
+	path = Bmol-script
+	url = https://github.com/JesseKerkvliet/Bmol-script.git
