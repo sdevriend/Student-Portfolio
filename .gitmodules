@@ -7,3 +7,6 @@
 [submodule "bapgcOpdracht"]
 	path = bapgcOpdracht
 	url = https://github.com/sdevriend/bapgcOpdracht.git
+[submodule "apexomes"]
+	path = apexomes
+	url = https://github.com/naturalis/apexomes.git
